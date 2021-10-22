@@ -12,7 +12,7 @@ function drawGrid(side = 16) {
         for(let j = 1; j <= side; j++) { 
             const flexColumn = document.createElement('div');
             flexRow.appendChild(flexColumn);
-            flexColumn.textContent = j;
+            // flexColumn.textContent = j;
             flexColumn.classList.add("box", "baseColor");
             flexColumn.addEventListener("mouseover", changeColor );
             flexColumn.addEventListener("mouseleave", baseColor);

@@ -1,8 +1,20 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 25px 0;
+    flex-shrink: 0;
 }
 
 header span {
@@ -10,8 +22,13 @@ header span {
 }
 
 #container {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid black;
+    
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
     gap: 2px;
 
     justify-content: center;
@@ -24,16 +41,21 @@ header span {
 
 .row {
     display: flex;
-    gap: 8px;
-    height: 20px;
-    /* background-color: orange; */
+    width: 100%;
+    justify-content: stretch;
+    gap: 2px;
+    height: 100%;
 }
 
 .box {
-    width: 20px;
-    height: 20px;    
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .baseColor {
     background-color: #d8b8b8;
+}
+
+footer {
+    margin-bottom: 20px;
 }
