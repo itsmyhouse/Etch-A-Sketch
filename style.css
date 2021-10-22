@@ -1,0 +1,25 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.colorOver {
+    background-color: red;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    height: 20px;
+    /* background-color: orange; */
+}
+
+.box {
+    width: 20px;
+    height: 20px;    
+}
+
+.baseColor {
+    background-color: #d8b8b8;
+}
